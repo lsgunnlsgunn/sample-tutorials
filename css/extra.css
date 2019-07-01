@@ -1,0 +1,19 @@
+h1 {
+   font-weight: lighter;
+   margin-top: 1.2em;
+   margin-bottom: 1.1em;
+}
+h2, h3 {
+   font-weight: lighter;
+   margin-top: 1.16em;
+}
+
+h4 {
+   color: grey;
+   font-size: .95em;
+}
+
+not-found {
+   font-weight: bold;
+   font-size: 3em;
+}
