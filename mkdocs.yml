@@ -1,0 +1,82 @@
+
+# Site and project information
+site_name: Tutorials
+site_description: 'Sample mini-site for cluster tutorials'
+site_author: 'Lisa Gunn - Information Developer'
+
+# Copyright
+copyright: 'Copyright &copy; 2019. All rights reserved.'
+
+nav:
+ - 'index.md'
+ - Get started:
+    - 'Introduction': 'intro.md'
+    - 'Create a cluster': 'start-here/start-here.md'
+    - 'Install the CLI': 'cli/index.md'
+    - 'Install the first package': 'first-package/index.md'
+ - Deploy apps:
+    - 'Deploy the first app': 'first-app/index.md'
+    - 'Create and run custom apps': 'create-service/index.md'
+    - 'Create and schedule jobs': 'schedule-jobs/index.md'
+ - Publish apps:
+    - 'Discover deployed services': 'service-discovery/index.md'
+    - 'Deploy and expose native container apps': 'native-app/index.md'
+ - Manage resources:
+    - 'Allocate and scale resources': 'resources/index.md'
+    - 'Load balancing workload': 'loadbalancing/index.md' 
+# - Navigation:
+#    - Admonition: extensions/admonition.md
+#    - CodeHilite: extensions/codehilite.md
+#    - Footnotes: extensions/footnotes.md
+#    - Metadata: extensions/metadata.md
+#    - Permalinks: extensions/permalinks.md
+#    - PyMdown: extensions/pymdown.md
+
+# Themes and customization
+# theme: readthedocs
+#
+theme:
+   name: 'material' 
+   feature:
+     tabs: true
+   palette:
+     primary: 'indigo'
+     accent: 'green'
+
+   favicon: 'assets/images/favicon.ico'
+   logo: 'global-img/gunnLogo.gif'
+
+   custom_dir: 'custom_theme'
+
+   static_templates:
+     - 404.html
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra_css:
+  - 'assets/extra.css'
+# - css/my-template.css
+# - css/custom.css
+
+extra_javascript:
+  - 'javascripts/extra.js'
+
+markdown_extensions:
+ - toc:
+     separator: "-"
+     permalink: True
+
+# Social links
+extra:    
+  social:
+    - type: 'github'
+      link: 'https://github.com/lsgunnlsgunn'
+    - type: 'twitter'
+      link: 'https://twitter.com/gunncomm'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/lisagunn'
+

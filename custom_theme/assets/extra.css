@@ -1,0 +1,30 @@
+h1 {
+   font-weight: lighter;
+   margin-top: 1.2em;
+   margin-bottom: 1.1em;
+}
+
+h2, h3 {
+   color: grey;
+   font-weight: lighter;
+   margin-top: 1.16em;
+}
+
+h4.summary {
+#   color: red;
+   font-weight: lighter;
+   font-size: .9em;
+   margin-bottom: 0pt;
+}
+
+h5.tagline {
+   color: grey;
+   font-size: .85em;
+#   font-weight: lighter;
+   margin-bottom: 4pt;
+}
+
+not-found {
+   font-weight: bold;
+   font-size: 3em;
+}

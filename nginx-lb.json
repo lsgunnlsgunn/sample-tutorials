@@ -1,0 +1,29 @@
+{
+    "apiVersion": "V2",
+    "name": "nginx-lb",
+    "count": 1,
+    "haproxy": {
+        "stats": {
+        "bindPort": 0
+        },
+        "frontends": [{
+        "bindPort": 15000,
+        "protocol": "HTTP",
+        "linkBackend": {
+            "defaultBackend": "nginx-backend"
+        }
+        }],
+        "backends": [{
+        "name": "nginx-backend",
+        "protocol": "HTTP",
+        "services": [{
+            "marathon": {
+            "serviceID": "/nginx"
+            },
+            "endpoint": {
+            "portName": "nginx-80"
+            }
+        }]
+        }]
+        }
+    }
